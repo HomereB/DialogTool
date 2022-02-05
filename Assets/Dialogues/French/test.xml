@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialog>	
+	
+  <Node>
+		<NodeId>0</NodeId>	
+		<Reply>
+			<CharacterID>0</CharacterID>
+      <CharacterImageLeft>Images/Image1</CharacterImageLeft>
+      <CharacterImageRight>Images/Image2</CharacterImageRight>
+			<Text>texte 1</Text>
+      <DisplayTime>2</DisplayTime>
+      <TimeToDisplay>4</TimeToDisplay>
+		</Reply>
+		<Reply>			
+			<CharacterID>1</CharacterID>
+      <CharacterImageLeft>Images/Image1</CharacterImageLeft>
+      <CharacterImageRight>Images/Image3</CharacterImageRight>
+			<Text>texte 2
+blub
+blib
+blob
+bleb</Text>
+      <DisplayTime>1</DisplayTime>
+      <TimeToDisplay>1</TimeToDisplay>
+    </Reply>
+				
+		<Answers>
+		
+			<Choice>
+				<ChoiceID> 0 </ChoiceID>
+				<ChoiceText>Choix 1</ChoiceText>
+        <TimeBeforeDisplay>0</TimeBeforeDisplay>
+        <DisplayTime>4</DisplayTime>
+				<CharactersRelationshipImpacts>
+					<CharacterID>1</CharacterID>
+					<RelationshipImpact>1</RelationshipImpact>
+          <CharacterID>2</CharacterID>
+          <RelationshipImpact>-1</RelationshipImpact>
+				</CharactersRelationshipImpacts>
+				
+				<NextNodeID>1</NextNodeID>
+			</Choice>
+			
+			<Choice>
+				<ChoiceID> 1 </ChoiceID>
+				<ChoiceText>Choix 2</ChoiceText>
+        <TimeBeforeDisplay>3</TimeBeforeDisplay>
+        <DisplayTime>7</DisplayTime>
+        <CharactersRelationshipImpacts>
+				</CharactersRelationshipImpacts>		
+				<NextNodeID>-1</NextNodeID>
+			</Choice>
+      <AnswerTime>10</AnswerTime>
+      <DefaultChoice>0</DefaultChoice>
+		</Answers>	
+	</Node>
+	
+  
+  
+	<Node>
+		<NodeId>1</NodeId>	
+    
+		<Reply>
+			<CharacterID>1</CharacterID>
+      <CharacterImageLeft>Images/Image4</CharacterImageLeft>
+      <CharacterImageRight>Images/Image5</CharacterImageRight>
+			<Text>texte 3</Text>
+      <DisplayTime>2</DisplayTime>
+      <TimeToDisplay>4</TimeToDisplay>
+    </Reply>
+    
+		<Reply>			
+			<CharacterID>0</CharacterID>
+      <CharacterImageLeft>Images/Image6</CharacterImageLeft>
+      <CharacterImageRight>Images/Image5</CharacterImageRight>
+			<Text>texte 4</Text>
+      <DisplayTime>1</DisplayTime>
+      <TimeToDisplay>3</TimeToDisplay>
+    </Reply>
+				
+		<Answers>		
+		
+			<Choice>
+				<ChoiceID> 0 </ChoiceID>
+				<ChoiceText>Choix 3</ChoiceText>
+        <TimeBeforeDisplay>0</TimeBeforeDisplay>
+        <DisplayTime>0</DisplayTime>
+				<CharactersRelationshipImpacts>
+				</CharactersRelationshipImpacts>
+				<NextNodeID>-1</NextNodeID>
+			</Choice>
+
+      <AnswerTime>0</AnswerTime>
+      <DefaultChoice>0</DefaultChoice>
+
+    </Answers>	
+		
+	</Node>
+</Dialog>
